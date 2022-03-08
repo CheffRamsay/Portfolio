@@ -5,6 +5,7 @@ export function animations(){
    const $seccionAbout = d.querySelector("#aboutAnimation");
    const $span = d.querySelectorAll("#span-animation");
    const $spanTxt = d.querySelectorAll(".span-text");
+<<<<<<< HEAD
    const $ab = d.querySelector(".about");
    
 
@@ -19,6 +20,12 @@ export function animations(){
      
       
    } 
+=======
+
+   const animationFlickinTransition = (data) =>{
+      data.style.animationName = "flicker";  
+    } 
+>>>>>>> 9c63fd7 (Last)
 
     const animationSpanTransition = () =>{
         $span.forEach(e =>{
@@ -47,11 +54,15 @@ export function animations(){
 
                 if(entry.target.id == "proyecto-div"){
                     entry.target.classList.add("animationFlick-delay-1");  
+<<<<<<< HEAD
                 }
               
               
                 
             }else{
+=======
+                }         
+>>>>>>> 9c63fd7 (Last)
                 
             }
         })
@@ -63,6 +74,7 @@ export function animations(){
         io.observe(el);
     })  
 
+<<<<<<< HEAD
 /* 
     const $sections = d.querySelectorAll("section[data-scoll-spy]");
     const cargarImagen = (entradas, observador) =>{
@@ -85,10 +97,13 @@ export function animations(){
 
     $sections.forEach(el => observador.observe(el));
     */
+=======
+>>>>>>> 9c63fd7 (Last)
     
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -97,6 +112,8 @@ export function animations(){
 
 
 
+=======
+>>>>>>> 9c63fd7 (Last)
 }
 
 
