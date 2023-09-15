@@ -1,0 +1,140 @@
+.c-header{
+  height: 110vh;
+  
+ .rectangulo-animado-container{
+   position: relative;
+   top: -50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .rectangulo-container{
+     position: relative;
+     top: -50px;
+     height: 300px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     
+ }
+ 
+ .rectangulo{
+     width: 0px;
+     height: 0px;
+     position: relative;
+     top: 200px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: $color-white;
+     -webkit-animation-duration:300ms;
+             animation-duration:300ms;
+     -webkit-animation-delay:1.4s;
+             animation-delay:1.4s;
+     -webkit-animation-timing-function: ease;
+             animation-timing-function: ease;
+     -webkit-animation-fill-mode: forwards;
+             animation-fill-mode: forwards;
+             h1{
+               display: none;
+               margin: 0px;
+               font-weight: 500;
+               opacity: 0;
+               font-family: "Rajdhani", sans-serif;
+               position: relative;
+               /* top: 68px; */
+               line-height: 0.6;
+               font-size: 30px;
+               text-align: center;
+               -webkit-animation-name: animacion-texto;
+               animation-name: animacion-texto;
+               -webkit-animation-duration: 300ms;
+               animation-duration: 300ms;
+               -webkit-animation-delay: 2s;
+               animation-delay: 2s;
+               -webkit-animation-timing-function: ease;
+               animation-timing-function: ease;
+               -webkit-animation-fill-mode: forwards;
+               animation-fill-mode: forwards;
+             }
+ }
+
+ .apertura{
+     -webkit-animation-name: 10s open-box infinite;
+             animation-name: 10s open-box infinite;
+ }
+
+.rectangulo-animado{
+ width: 251px;
+ height: 319px;
+ background: rgba(255, 255, 255, 0.02);
+ border: 1px solid #FFFFFF;
+ border-radius: 0%;
+ margin-left: 50%;
+ left: -125px;
+ top: 250px;
+ position: absolute;
+ transform: scale(0.1, 0.1);
+ opacity: 0;
+ -webkit-animation-duration: 900ms;
+ animation-duration: 900ms;
+ -webkit-animation-timing-function: ease-in-out;
+ animation-timing-function: ease-in-out;
+ -webkit-animation-fill-mode: forwards;
+ animation-fill-mode: forwards;
+
+   
+}
+
+.rectangulo-animado:nth-of-type(2){
+
+         
+            -webkit-animation-duration:700ms;
+             animation-duration:700ms;
+            -webkit-animation-timing-function: ease-in-out;
+                     animation-timing-function: ease-in-out;
+            -webkit-animation-fill-mode: forwards;
+                     animation-fill-mode: forwards;
+            -webkit-animation-delay: 500ms;
+                     animation-delay: 500ms;
+                     
+}
+
+.rectangulo-animado:nth-of-type(3){
+                
+           
+            -webkit-animation-duration:300ms;
+             animation-duration:300ms;
+            -webkit-animation-timing-function: ease-in-out;
+                     animation-timing-function: ease-in-out;
+            -webkit-animation-fill-mode: forwards;
+                     animation-fill-mode: forwards;
+            -webkit-animation-delay: 300ms;
+                     animation-delay: 300ms;
+}
+}
+
+@media (min-width: $breakpoint-tablet) {
+ .c-header{
+   .rectangulo-container{
+     .rectangulo h1{
+       font-size: 48px;
+     }
+   }
+
+   .rectangulo{
+     top: 225px;
+   }
+
+   .rectangulo-animado{
+     width: 483px;
+     height: 319px;
+     left: -243px;
+     top: 300px;
+   }
+  
+ }
+}
+
+  
