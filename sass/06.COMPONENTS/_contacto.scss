@@ -1,0 +1,44 @@
+.c-contacto{
+    border: 1px solid $color-gray-blue;
+    padding: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    &__title{
+        color: $color-white;
+        font-family: $font-1;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__enlace:first-of-type {
+        /* Estilos para el primer elemento .c-contacto__enlace dentro de .c-contacto */
+        padding: 16px 0px 16px 0px;
+    }
+
+
+    &__enlace{
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        color: #FFF;
+        font-family: $font-1;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .c-contacto{
+        &__enlace{
+            font-size: 16px;
+        }
+    }
+}

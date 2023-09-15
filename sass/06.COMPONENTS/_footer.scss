@@ -1,0 +1,16 @@
+.c-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid $color-white;
+    .c-footer--span{
+        color: $color-gray-blue;
+        font-family: $font-1;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+}

@@ -1,0 +1,1109 @@
+@charset "UTF-8";
+/*Elimina bordes*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+/*Evitamos problemas con las imagenes*/
+picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /*Opcional*/
+  object-fit: cover;
+  /*Opcional*/
+  object-fit: center center;
+}
+
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+font-face {
+  font-family: "Fira Code";
+  src: url("../01.SETTIGS/FiraCode-Bold.ttf");
+  src: url("../01.SETTIGS/FiraCode-Regular.ttf");
+}
+
+font-face {
+  font-family: "Rajdhani", sans-serif;
+  src: url("../01.SETTIGS/Rajdhani-Bold.ttf") format("truetype");
+  src: url("../01.SETTIGS/Rajdhani-Regular.ttf") format("truetype");
+  src: url("../01.SETTIGS/Rajdhani-SemiBold.ttf") format("truetype");
+  src: url("../01.SETTIGS/Rajdhani-Medium.ttf") format("truetype");
+}
+
+.c-header {
+  /*KEYFRAMES*/
+  /* END KEYFRAMES*/
+}
+@-webkit-keyframes flickNav {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flickNav {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes ring-1 {
+  0% {
+    position: absolute;
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    position: absolute;
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+  }
+  100% {
+    position: absolute;
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+  }
+}
+@keyframes ring-1 {
+  0% {
+    position: absolute;
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    position: absolute;
+    opacity: 1;
+  }
+  99% {
+    position: absolute;
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+  }
+  100% {
+    position: absolute;
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 0.86139;
+  }
+  5% {
+    opacity: 0.12793;
+  }
+  10% {
+    opacity: 0.36759;
+  }
+  15% {
+    opacity: 0.9766;
+  }
+  20% {
+    opacity: 0.61364;
+  }
+  25% {
+    opacity: 0.94477;
+  }
+  30% {
+    opacity: 0.57811;
+  }
+  35% {
+    opacity: 0.03416;
+  }
+  40% {
+    opacity: 0.21835;
+  }
+  45% {
+    opacity: 0.62054;
+  }
+  50% {
+    opacity: 0.89452;
+  }
+  55% {
+    opacity: 0.89997;
+  }
+  60% {
+    opacity: 0.37872;
+  }
+  65% {
+    opacity: 0.04929;
+  }
+  70% {
+    opacity: 0.14477;
+  }
+  75% {
+    opacity: 0.27512;
+  }
+  80% {
+    opacity: 0.84701;
+  }
+  85% {
+    opacity: 0.85952;
+  }
+  90% {
+    opacity: 0.76553;
+  }
+  95% {
+    opacity: 0.91372;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flicker {
+  0% {
+    opacity: 0.86139;
+  }
+  5% {
+    opacity: 0.12793;
+  }
+  10% {
+    opacity: 0.36759;
+  }
+  15% {
+    opacity: 0.9766;
+  }
+  20% {
+    opacity: 0.61364;
+  }
+  25% {
+    opacity: 0.94477;
+  }
+  30% {
+    opacity: 0.57811;
+  }
+  35% {
+    opacity: 0.03416;
+  }
+  40% {
+    opacity: 0.21835;
+  }
+  45% {
+    opacity: 0.62054;
+  }
+  50% {
+    opacity: 0.89452;
+  }
+  55% {
+    opacity: 0.89997;
+  }
+  60% {
+    opacity: 0.37872;
+  }
+  65% {
+    opacity: 0.04929;
+  }
+  70% {
+    opacity: 0.14477;
+  }
+  75% {
+    opacity: 0.27512;
+  }
+  80% {
+    opacity: 0.84701;
+  }
+  85% {
+    opacity: 0.85952;
+  }
+  90% {
+    opacity: 0.76553;
+  }
+  95% {
+    opacity: 0.91372;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animacion-texto {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@keyframes animacion-texto {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes open-box {
+  0% {
+    position: relative;
+    width: 260px;
+    height: 0px;
+  }
+  100% {
+    width: 260px;
+    height: 335px;
+  }
+}
+@keyframes open-box {
+  0% {
+    position: relative;
+    width: 260px;
+    height: 0px;
+  }
+  100% {
+    width: 260px;
+    height: 335px;
+  }
+}
+@-webkit-keyframes open-span {
+  0% {
+    height: 0;
+    border: none;
+    background-color: transparent;
+  }
+  100% {
+    height: 40px;
+    background-color: white;
+  }
+}
+@keyframes open-span {
+  0% {
+    height: 0;
+    border: none;
+    background-color: transparent;
+  }
+  100% {
+    height: 40px;
+    background-color: white;
+  }
+}
+
+@media (min-width: 850px) {
+  @-webkit-keyframes open-box {
+    0% {
+      position: relative;
+      width: 500px;
+      height: 0px;
+    }
+    100% {
+      width: 500px;
+      height: 300px;
+    }
+  }
+  @keyframes open-box {
+    0% {
+      position: relative;
+      width: 500px;
+      height: 0px;
+    }
+    100% {
+      width: 500px;
+      height: 300px;
+    }
+  }
+}
+.o-btn-large {
+  color: #FFFFFF;
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-flex;
+  padding: 8px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid #FFFFFF;
+  text-decoration: none;
+  transition: border 0.3s ease-in-out, background 0.2s ease-in-out; /* Transición suave */
+}
+.o-btn-large:hover {
+  border: 1px solid #ABB2BF;
+  background: rgba(171, 178, 191, 0.2);
+}
+
+.o-h1 {
+  color: #FFF;
+  font-family: "Fira Code";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+.o-h1::after {
+  content: "";
+  flex: 1;
+  /* border-bottom: groove 0; */
+  margin: 26px 0px 20px 20px;
+  box-shadow: 0 -2px;
+  /* background-color: #000; */
+  width: 28%;
+  position: absolute;
+  height: 1px;
+}
+
+.o-img-project {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.o-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.o-padding-16 {
+  padding: 16px;
+}
+
+.c-nav {
+  position: relative;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+  background-color: aqua;
+}
+.c-nav__logo img {
+  width: 60px;
+}
+.c-nav__ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.c-nav__ul li a {
+  color: #ABB2BF;
+  font-family: "Fira Code";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.c-nav__ul li a:hover {
+  color: #FFFFFF;
+}
+.c-nav__cruz {
+  display: none;
+}
+.c-nav__redes {
+  display: none;
+}
+
+/* Consulta de medios para escritorios */
+@media (max-width: 500px) {
+  .c-nav {
+    padding: 14px;
+    background-color: aqua;
+  }
+}
+@media (max-width: 850px) {
+  .c-nav {
+    padding: 15px 10px;
+    transition: 0.2s;
+    background-color: aqua;
+  }
+  .c-nav__logo img {
+    width: 60px;
+  }
+  .c-nav__ul {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #282C33;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.5s ease;
+    align-items: start;
+    padding: 10px;
+  }
+  .c-nav__ul li a {
+    color: var(--white, #FFF);
+    font-family: Fira Code;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .c-nav__ul.open {
+    right: 0%;
+  }
+  .c-nav__cruz {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+  .c-nav__redes {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (min-width: 850px) {
+  .c-nav {
+    padding: 15px 50px;
+  }
+}
+@media (min-width: 1040px) {
+  .c-nav {
+    padding: 15px 120px;
+  }
+}
+.c-header {
+  height: 110vh;
+}
+.c-header .rectangulo-animado-container {
+  position: relative;
+  top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-header .rectangulo-container {
+  position: relative;
+  top: -50px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.c-header .rectangulo {
+  width: 0px;
+  height: 0px;
+  position: relative;
+  top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.c-header .rectangulo h1 {
+  display: none;
+  margin: 0px;
+  font-weight: 500;
+  opacity: 0;
+  font-family: "Rajdhani", sans-serif;
+  position: relative;
+  /* top: 68px; */
+  line-height: 0.6;
+  font-size: 30px;
+  text-align: center;
+  -webkit-animation-name: animacion-texto;
+  animation-name: animacion-texto;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.c-header .apertura {
+  -webkit-animation-name: 10s open-box infinite;
+  animation-name: 10s open-box infinite;
+}
+.c-header .rectangulo-animado {
+  width: 251px;
+  height: 319px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid #FFFFFF;
+  border-radius: 0%;
+  margin-left: 50%;
+  left: -125px;
+  top: 250px;
+  position: absolute;
+  transform: scale(0.1, 0.1);
+  opacity: 0;
+  -webkit-animation-duration: 900ms;
+  animation-duration: 900ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.c-header .rectangulo-animado:nth-of-type(2) {
+  -webkit-animation-duration: 700ms;
+  animation-duration: 700ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+.c-header .rectangulo-animado:nth-of-type(3) {
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+
+@media (min-width: 850px) {
+  .c-header .rectangulo-container .rectangulo h1 {
+    font-size: 48px;
+  }
+  .c-header .rectangulo {
+    top: 225px;
+  }
+  .c-header .rectangulo-animado {
+    width: 483px;
+    height: 319px;
+    left: -243px;
+    top: 300px;
+  }
+}
+.c-seccion {
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 100px;
+}
+.c-seccion__present {
+  display: flex;
+}
+
+@media (min-width: 850px) {
+  .c-seccion {
+    padding: 0px 50px 0px 50px;
+  }
+}
+@media (min-width: 1040px) {
+  .c-seccion {
+    padding: 0px 115px 0px 115px;
+    margin-bottom: 130px;
+  }
+}
+.c-card {
+  border: 1px solid #ABB2BF;
+}
+.c-card__tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border: 1px solid #ABB2BF;
+}
+.c-card__tecnologias span {
+  color: #ABB2BF;
+  font-family: "Fira Code";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.c-card__title--text {
+  color: #FFFFFF;
+  font-family: "Fira Code";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.c-card__title--description {
+  color: #ABB2BF;
+  font-family: "Fira Code";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 16px 0px 16px 0px;
+}
+.c-card__buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.c-card__buttons--btn {
+  color: #FFFFFF;
+  font-family: "Fira Code";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  padding: 8px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid #ABB2BF;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out, background 0.2s ease-in-out; /* Transición suave */
+}
+.c-card__buttons--btn:hover {
+  border: 1px solid #ABB2BF;
+  background: rgba(171, 178, 191, 0.2);
+}
+
+.c-acerca__txtimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.c-acerca__txtimg--texto {
+  color: #ABB2BF;
+  font-family: "Fira Code";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+.c-acerca__txtimg .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 600px;
+}
+.c-acerca__txtimg--tecnologias {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.c-acerca__txtimg--tecnologias span {
+  border: 1px solid #ABB2BF;
+  padding: 8px;
+  color: #ABB2BF;
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.c-acerca__txtimg--img {
+  max-width: 320px;
+  height: 300px;
+  margin-top: 30px;
+}
+
+@media (min-width: 850px) {
+  .c-acerca__txtimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .c-acerca__txtimg--tecnologias {
+    width: 235px;
+  }
+}
+.c-contacto {
+  border: 1px solid #ABB2BF;
+  padding: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.c-contacto__title {
+  color: #FFFFFF;
+  font-family: "Fira Code";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.c-contacto__enlace:first-of-type {
+  /* Estilos para el primer elemento .c-contacto__enlace dentro de .c-contacto */
+  padding: 16px 0px 16px 0px;
+}
+.c-contacto__enlace {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #FFF;
+  font-family: "Fira Code";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+.c-contacto__enlace:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 850px) {
+  .c-contacto__enlace {
+    font-size: 16px;
+  }
+}
+.c-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid #FFFFFF;
+}
+.c-footer .c-footer--span {
+  color: #ABB2BF;
+  font-family: "Fira Code";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.pre-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #282C33;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.u-display-none {
+  display: none;
+}
+
+.u-block {
+  display: block;
+}
+
+/*Elimina bordes*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+/*Evitamos problemas con las imagenes*/
+picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /*Opcional*/
+  object-fit: cover;
+  /*Opcional*/
+  object-fit: center center;
+}
+
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+font-face {
+  font-family: "Fira Code";
+  src: url("../01.SETTIGS/FiraCode-Bold.ttf");
+  src: url("../01.SETTIGS/FiraCode-Regular.ttf");
+}
+
+font-face {
+  font-family: "Rajdhani", sans-serif;
+  src: url("../01.SETTIGS/Rajdhani-Bold.ttf") format("truetype");
+  src: url("../01.SETTIGS/Rajdhani-Regular.ttf") format("truetype");
+  src: url("../01.SETTIGS/Rajdhani-SemiBold.ttf") format("truetype");
+  src: url("../01.SETTIGS/Rajdhani-Medium.ttf") format("truetype");
+}
+
+.o-btn-large {
+  color: #FFFFFF;
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-flex;
+  padding: 8px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid #FFFFFF;
+  text-decoration: none;
+  transition: border 0.3s ease-in-out, background 0.2s ease-in-out; /* Transición suave */
+}
+
+.o-btn-large:hover {
+  border: 1px solid #ABB2BF;
+  background: rgba(171, 178, 191, 0.2);
+}
+
+/* Estilos base para dispositivos móviles (sin consulta de medios) */
+.c-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  transition: all 0.5s ease;
+  background: #282C33;
+}
+
+.c-nav__logo img {
+  width: 60px;
+}
+
+.c-nav__ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.c-nav__ul li a {
+  color: #ABB2BF;
+  font-family: "Fira Code";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.c-nav__ul li a:hover {
+  color: #FFFFFF;
+}
+
+.c-nav__cruz {
+  display: none;
+}
+
+.c-nav__redes {
+  display: none;
+}
+
+/* Consulta de medios para tabletas */
+@media (max-width: 850px) {
+  .c-nav {
+    transition: 0.2s;
+  }
+  .c-nav__logo img {
+    width: 60px;
+  }
+  .c-nav__ul {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #282C33;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.5s ease;
+    align-items: start;
+    padding: 10px;
+  }
+  .c-nav__ul li a {
+    color: var(--white, #FFF);
+    font-family: Fira Code;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .c-nav__ul.open {
+    right: 0%;
+  }
+  .c-nav__cruz {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+  .c-nav__redes {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+/* Consulta de medios para escritorios */
+.u-display-none {
+  display: none;
+}
+
+.u-block {
+  display: block;
+}
+
+body {
+  background-color: #282C33;
+}
+
+
+
+/*# sourceMappingURL=style2.css.map */

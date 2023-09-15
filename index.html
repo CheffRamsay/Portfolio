@@ -1,5 +1,203 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>LVCAS WEB</title>
+  <link rel="icon" href="/img/logo-back-azul.png" sizes="16x1" type="image/png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style2.css">
+  <!---->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="c-body">
+ 
+  <div class="pre-loader">
+    <img src="/img/preloadergif.gif" alt="Loading" width="90">
+  </div>
+
+  <header class="c-header">
+    <nav class="c-nav">
+      <a class="c-nav__logo" href=""><img src="img/Component 1.svg" alt="Logo"></a>
+      <ul class="c-nav__ul">
+        <li><a class="c-nav__item" href="#proyectos">Proyectos</a></li>
+        <li><a class="c-nav__item" href="#acerca">Acerca</a></li>
+        <li><a class="c-nav__item" href="#contacto">Contacto</a></li>
+        <div class="c-nav__descarga">
+          <a class="c-nav__btndownload o-btn-large" href="/img/CV LUCAS CÁCERES.pdf" download="CV">
+            DESCARGAR CV
+          </a>
+        </div>
+        <div class="c-nav__redes">
+          <a class="c-nav__reditem" href="https://github.com/lvcas-ca" target="_blank"><img src="./img/Github.png" alt="Logo GitHub"></a>
+        </div>
+      </ul>
+      <!-- Imagen de la hamburguesa (líneas) -->
+      <img class="cruz c-nav__cruz hamburguesa" id="menu-icon" src="/img/lines.png" alt="hamburguesa">
+
+      <!-- Imagen de la "X" (cruz) -->
+      <img class="cruz c-nav__cruz u-display-none" id="close-icon" src="/img/cruz.png" alt="cruz">
+    </nav>
+
+   
+
+    <div class="rectangulo-container">
+      <div class="rectangulo-animado-container">
+        <div class="rectangulo-animado"></div>
+        <div class="rectangulo-animado"></div>
+        <div class="rectangulo-animado"></div>
+    </div>
+    <div class="rectangulo">
+        <h1>HOLA SOY LUCAS<br><br>MAQUETADOR WEB</h1>
+    </div>
+    </div>
+
+  </header>
+
+  <section class="c-seccion" id="proyectos">
+    <div class="c-seccion__present">
+      <h1 class="o-h1">Proyectos</h1>
+    </div>
+    <div class="o-flex">
+      <div class="c-card">
+        <div class="c-card__img">
+          <img class="o-img-project" src="/img/medipriva.png" alt="Medipriva">
+        </div>
+        <div class="c-card__tecnologias">
+          <span class="c-card__item">HTML</span>
+          <span class="c-card__item">SASS</span>
+          <span class="c-card__item">JS</span>
+        </div>
+        <div class="o-padding-16">
+          <div class="c-card__title">
+            <h2 class="c-card__title--text">Medipriva</h2>
+            <p class="c-card__title--description">Venta de seguro medico</p>
+          </div>
+          <div class="c-card__buttons">
+            <a class="c-card__buttons--btn" href="https://www.medipriva.com.ar/" target="_blank">LIVE <~></a>
+            <a class="c-card__buttons--btn" href="https://github.com/lvcas-ca/medirpiva-v2.0" target="_blank">GITHUB >=</a>
+          </div>
+        </div>
+     
+      </div>
+
+      <div class="c-card">
+        <div class="c-card__img">
+          <img class="o-img-project" src="/img/laguan.png" alt="LaGuan" width="320" height="200" >
+        </div>
+        <div class="c-card__tecnologias">
+          <span class="c-card__item">HTML</span>
+          <span class="c-card__item">SASS</span>
+          <span class="c-card__item">JS</span>
+          <span class="c-card__item">BOOTSTRAP</span>
+          <span class="c-card__item">WORDPRESS</span>
+        </div>
+        <div class="o-padding-16">
+          <div class="c-card__title">
+            <h2 class="c-card__title--text">LaGuan</h2>
+            <p class="c-card__title--description">Agencia de Viajes</p>
+          </div>
+          <div class="c-card__buttons">
+            <a class="c-card__buttons--btn" href="https://laguan.com.ar/" target="_blank">LIVE <~></a>
+            <a class="c-card__buttons--btn" href="https://github.com/lvcas-ca/laguan.git" target="_blank">GITHUB >=</a>
+          </div>
+        </div>
+     
+      </div>
+      
+      <div class="c-card">
+        <div class="c-card__img">
+          <img class="o-img-project" src="/img/preza.png" alt="Preza Web">
+        </div>
+        <div class="c-card__tecnologias">
+          <span class="c-card__item">HTML</span>
+          <span class="c-card__item">CSS</span>
+          <span class="c-card__item">JS</span>
+        </div>
+        <div class="o-padding-16">
+          <div class="c-card__title">
+            <h2 class="c-card__title--text">Preza</h2>
+            <p class="c-card__title--description">Servicios Integrales</p>
+          </div>
+          <div class="c-card__buttons">
+            <a class="c-card__buttons--btn" href="https://prezaserviciosintegrales.com/" target="_blank">LIVE <~></a>
+            <a class="c-card__buttons--btn" href="https://github.com/lvcas-ca/preza-servicios-integrales" target="_blank">GITHUB >=</a>
+          </div>
+        </div>
+     
+      </div>
+
+      
+    </div>
+  
+  </section>
+
+  <section class="c-seccion" id="acerca">
+    <div class="c-seccion__present">
+      <h1 class="o-h1">Acerca</h1>
+    </div>
+    <div class="c-acerca">
+      <div class="c-acerca__txtimg">
+        <div class="o-flex-txt-img">
+          <p class="c-acerca__txtimg--texto">
+            ¡Hola! Soy maquetador web autodidacta con una base en programación adquirida durante mi tiempo en la
+            universidad.
+            Mi enfoque perseverante y mi deseo constante de aprendizaje me impulsan a poner en práctica todo lo aprendido
+            hasta ahora,
+            mientras sigo avanzando en mi carrera.
+            Colaboré en diversos proyectos como freelance, trabajando con las siguientes tecnologías:
+          </p>
+          <div class="container">
+            <div class="c-acerca__txtimg--tecnologias">
+              <span><strong>Lenguajes</strong></span>
+              <span>Javascript</span>
+            </div>
+
+            <div class="c-acerca__txtimg--tecnologias">
+              <span><strong>Otros</strong></span>
+              <span>HTML CSS SCSS WORDPRESS</span>
+              
+            </div>
+
+            <div class="c-acerca__txtimg--tecnologias">
+              <span><strong>Frameworks</strong></span>
+              <span>Bootstrap</span>
+            </div>
+
+            <div class="c-acerca__txtimg--tecnologias">
+              <span><strong>Herramientas</strong></span>
+              <span>VSCode GIT FIGMA NOTION</span>
+            </div>
+          </div>
+        </div>
+  
+        <img class="c-acerca__txtimg--img" src="./img/face.jpg" alt="Foto Perfil">
+      </div>
+    </div>
+  </section>
+
+  <section class="c-seccion" id="contacto">
+    <div class="c-seccion__present">
+      <h1 class="o-h1">Contacto</h1>
+    </div>
+    <div class="c-contacto">
+      <p class="c-contacto__title">Escribime</p>
+      <a class="c-contacto__enlace" href="https://www.linkedin.com/in/lucas-ca/" target="_blank"><img src="./img/linkedin.png" alt="Linkedin">Linkedin/in/lucas-ca</a>
+      <a class="c-contacto__enlace"  href="mailto:lucas_.caceres@hotmail.com.ar"><img width="24" src="./img/Email.png" alt="Linkedin">lucas_.caceres@hotmail.com.ar</a>
+    </div>
+  </section>
+  
+  <footer class="c-footer">
+    <span class="c-footer--span"><img src="img/Component 1.svg" alt="Logo" width="60"></span>
+  </footer>
+=======
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -233,6 +431,7 @@
         </footer>
 
        
+>>>>>>> 0f57479ca5d3c5faa1a1c90fd40e94ebeb832e8a
       
         <script src="js/app.js" type="module"></script>
     </body>
