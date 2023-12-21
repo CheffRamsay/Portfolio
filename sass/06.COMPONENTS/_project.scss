@@ -1,0 +1,21 @@
+.c-seccion{
+    padding: $padding-mobile;
+    margin-bottom: 100px;
+    &__present{
+        display: flex;
+    }
+}
+    
+@media (min-width: $breakpoint-tablet) {
+    .c-seccion{
+        padding: $padding-tablet;
+    }
+}
+
+@media (min-width: $breakpoint-desktop){
+    .c-seccion{
+        padding: $padding-desk;
+        margin-bottom: 130px;
+        
+    }
+}

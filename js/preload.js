@@ -1,3 +1,5 @@
+
+
 const d = document;
 const w =  window;
 
@@ -7,13 +9,12 @@ export function preload(){
     const boxText = d.querySelector(".rectangulo");
     const boxTextH1 = d.querySelector(".rectangulo h1");
     const $ab = d.querySelector(".about");
-    const barraNav = d.querySelector(".menu-container");
+    const barraNav = d.querySelector(".c-nav");
+    const body = d.querySelector(".c-body");
 
     
-    function quitarMarginAbout(){
-      $ab.style.marginTop = "0px";
-      $ab.style.display = "block";
-
+    function quitarOverflow(){
+       body.style.overflow = "visible";
     }
 
     const addAnimationRectangulo = e =>{
@@ -23,12 +24,23 @@ export function preload(){
     }
 
     w.addEventListener("load", e =>{
+        console.log("cargando todo")
         $loader.parentElement.removeChild($loader);
-        addAnimationRectangulo();
+        addAnimationRectangulo(); // Agrega la animación "ring-1" en la carga inicial
+    
+        
         boxText.style.animationName = "open-box";
         boxTextH1.style.animationName = "animacion-texto";
         boxTextH1.style.display = "block";
-        setTimeout(quitarMarginAbout, 2500); 
+        //setTimeout(quitarOverflow, 5500);
         barraNav.style.opacity = "1";
+        
+          
     });
+
+
+  
 }
+
+
+

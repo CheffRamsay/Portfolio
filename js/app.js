@@ -5,7 +5,9 @@ import { preload } from "./preload.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", e=>{
-  navMenu();
-  animations();
   preload();
+  animations();
+  navMenu();
+  
+  
 });

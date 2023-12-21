@@ -1,3 +1,10 @@
+export function animations(){
+    console.log("hola");
+}
+
+/*
+
+
 const d = document;
 const w =  window;
 
@@ -91,5 +98,10 @@ export function animations(){
 
 
 }
+
+
+
+*/
+
 
 
